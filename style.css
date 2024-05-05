@@ -1,0 +1,140 @@
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+
+@font-face {
+    font-family: rejoy;
+    src: url(./Rejouice-Headline.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./IMG/Bg.jpg);
+    object-fit: cover;
+    background-position: center;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw 15vw;
+}
+
+#login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#login1{
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    height: 75vh;
+    width: 100%;
+    background-color: red;
+    padding: 2vw;
+}
+
+#login1 button{
+    border: 2px solid black;
+    width: 10vw;
+    height: 3vw;
+    border-radius: 25px;
+    background-color: white;
+    font-family: rejoy;
+    font-weight: 100;
+    font-size: 1vw;
+}
+
+#login2{
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 75vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: rejoy;
+    font-size: 1.5vw;
+}
+
+#login2 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#signup{
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+}
+
+#signup1{
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    height: 75vh;
+    width: 100%;
+    background-color: white;
+    padding: 2vw;
+}
+
+#signup1 button{
+    border: 2px solid black;
+    width: 10vw;
+    height: 3vw;
+    border-radius: 25px;
+    background-color: red;
+    font-family: rejoy;
+    font-weight: 100;
+    font-size: 1vw;
+}
+
+#signup2{
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 75vh;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: rejoy;
+    font-size: 1.5vw;
+}
+
+#signup img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
