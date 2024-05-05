@@ -8,21 +8,22 @@
     src: url(./Rejouice-Headline.ttf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     width: 100vw;
-    background-image: url(./IMG/Bg.jpg);
+    background-color: rgba(55, 0, 255, 0.415);
+    /* background-image: url(./IMG/Login.jpg);
     object-fit: cover;
-    background-position: center;
+    background-position: center; */
 }
 
-#main{
+#main {
     width: 100%;
     height: 100%;
     display: flex;
@@ -34,13 +35,14 @@ body{
     padding: 5vw 15vw;
 }
 
-#login{
+#login {
     width: 100%;
     height: 100%;
     display: flex;
 }
 
-#login1{
+/* Login 1 */
+#login1 {
     border-left: 2px solid black;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -48,11 +50,12 @@ body{
     border-top-left-radius: 30px;
     height: 75vh;
     width: 100%;
-    background-color: red;
-    padding: 2vw;
+    background-color: rgba(55, 0, 255, 0.64);
+    padding: 2.5vw;
+    font-family: nb;
 }
 
-#login1 button{
+#login1 button {
     border: 2px solid black;
     width: 10vw;
     height: 3vw;
@@ -60,10 +63,97 @@ body{
     background-color: white;
     font-family: rejoy;
     font-weight: 100;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
-#login2{
+#login1 form {
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#login1 form h4 {
+    font-family: nb;
+    margin: 0.5vw;
+    font-size: 1.5vw;
+    color:white;
+}
+
+#login1 form h5{
+    font-family: nb;
+    color:white;
+    margin: auto;
+    font-size: 1vw;
+    padding: 2vw;
+} 
+
+#login1 form input {
+    font-family: nb;
+    margin: 0.5vw;
+    font-size: 1.5vw;
+    border-radius: 10px;
+}
+
+#login1 #btn{
+    font-family: rejoy;
+    background-color: white;
+    width: 50%;
+    border-radius: 30px;
+    margin: auto;
+    padding: 0.6vw;
+}
+
+
+/* Captcha */
+#captcha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#image{
+    text-decoration-line: calc(height(100/50));
+    font-family: rejoy;
+    border: 1px solid black;
+    width: 25%;
+    text-align: center;
+    font-size: 1.5vw;
+    background-color: white;
+}
+
+
+#form #user-input {
+    box-shadow: 5px 5px 5px 5px gray;
+    width: auto;
+    margin-right: 10px;
+    padding: 10px;
+    padding-bottom: 0px;
+    height: 40px;
+}
+
+#form input {
+    border: 1px black solid;
+}
+
+#form .inline {
+    display: inline-block;
+}
+
+#form #btn {
+    box-shadow: 5px 5px 5px grey;
+    color: aqua;
+    margin: 10px;
+    background-color: brown;
+}
+
+#key{
+    font-family: nb;
+    text-align: center;
+    color: white;
+}
+
+/* Login 2 */
+#login2 {
     border-right: 2px solid black;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -78,22 +168,48 @@ body{
     align-items: center;
     font-family: rejoy;
     font-size: 1.5vw;
+    padding: 2vw;
 }
 
-#login2 img{
+#login2 img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
 
-#signup{
+#signup {
     width: 100%;
     height: 100%;
     display: none;
     opacity: 0;
 }
 
-#signup1{
+/* Signup 2 */
+#signup1 {
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 75vh;
+    width: 100%;
+    background-color: rgba(55, 0, 255, 0.64);
+    padding: 2.5vw;
+}
+
+#signup1 button {
+    border: 2px solid black;
+    width: 10vw;
+    height: 3vw;
+    border-radius: 25px;
+    background-color: white;
+    font-family: rejoy;
+    font-weight: 100;
+    font-size: 1.5vw;
+}
+
+/* Signup 2 */
+#signup2 {
     border-left: 2px solid black;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -102,38 +218,16 @@ body{
     height: 75vh;
     width: 100%;
     background-color: white;
-    padding: 2vw;
-}
-
-#signup1 button{
-    border: 2px solid black;
-    width: 10vw;
-    height: 3vw;
-    border-radius: 25px;
-    background-color: red;
-    font-family: rejoy;
-    font-weight: 100;
-    font-size: 1vw;
-}
-
-#signup2{
-    border-right: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 75vh;
-    width: 100%;
-    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: rejoy;
     font-size: 1.5vw;
+    padding: 2vw;
 }
 
-#signup img{
+#signup img {
     width: 200px;
     height: 200px;
     border-radius: 50%;

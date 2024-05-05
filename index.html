@@ -9,11 +9,32 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body onload="generate()">
     <div id="main">
         <div id="login">
             <div id="login1">
                 <button type="button">Sign up</button>
+                <form action="#">
+                    <h4>E-mail</h4>
+                    <input type="text" id="Email" placeholder="  E-mail">
+                    <h4>Password</h4>
+                    <input type="Password" id="pass" placeholder="  Password">
+                    <!-- Captcha Code -->
+                    <h4>Enter Given Captcha</h4>
+                    <div id="captcha">
+                        <div id="user-input" class="inline">
+                            <input type="text" id="submit" placeholder="  Captcha code" />
+                        </div>
+                        <div id="image" class="inline" selectable="False">
+                        </div>
+                        <div class="inline" onclick="generate()">
+                            <i class="fas fa-sync"></i>
+                        </div>
+                    </div>
+                    <h5>If not have an Account please click on Sign-up</h5>
+                    <input type="submit" id="btn" onclick="printmsg()" />
+                    <p id="key"></p>
+                </form>
             </div>
             <div id="login2">
                 <img src="./IMG/Hello.jpg" alt="Hello">
@@ -23,13 +44,13 @@
         </div>
 
         <div id="signup">
-            <div id="signup1">
-                <button type="button">Log in</button>
-            </div>
             <div id="signup2">
                 <img src="./IMG/Hello.jpg" alt="Hello">
                 <h1>Welcome New User!</h1>
                 <h3>We hope you Enjoy Our Service</h3>
+            </div>
+            <div id="signup1">
+                <button type="button">Log in</button>
             </div>
         </div>
     </div>
