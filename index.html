@@ -13,7 +13,13 @@
     <div id="main">
         <div id="login">
             <div id="login1">
-                <button type="button">Sign up</button>
+                <button type="button">Login</button>
+                <div id="icons">
+                    <i class="fa-brands fa-instagram"><link rel="stylesheet" href="#"></i>
+                    <i class="fa-brands fa-google"><link rel="stylesheet" href="#"></i>
+                    <i class="fa-brands fa-linkedin"><link rel="stylesheet" href="#"></i>
+                    <i class="fa-brands fa-x-twitter"><link rel="stylesheet" href="#"></i>
+                </div>
                 <form action="#">
                     <h4>E-mail</h4>
                     <input type="text" id="Email" placeholder="  E-mail">
@@ -25,10 +31,10 @@
                         <div id="user-input" class="inline">
                             <input type="text" id="submit" placeholder="  Captcha code" />
                         </div>
-                        <div id="image" class="inline" selectable="False">
-                        </div>
                         <div class="inline" onclick="generate()">
-                            <i class="fas fa-sync"></i>
+                            <i class="fas fa-sync" id="Reload"></i>
+                        </div>
+                        <div id="image" class="inline" selectable="False">
                         </div>
                     </div>
                     <h5>If not have an Account please click on Sign-up</h5>
@@ -37,20 +43,26 @@
                 </form>
             </div>
             <div id="login2">
-                <img src="./IMG/Hello.jpg" alt="Hello">
-                <h1>Welcome Back Buddy!</h1>
-                <h3>We hope You are Enjoying our Services</h3>
+                <button type="button">Signup</button>
+                <div id="Text1">
+                    <h1><img src="./IMG/Hello.jpg" alt="Hello"></h1>
+                    <h1><span>Welcome Back Buddy!</span></h1>
+                    <h1>We hope You are Enjoying our Services</h1>
+                </div>
             </div>
         </div>
 
         <div id="signup">
             <div id="signup2">
-                <img src="./IMG/Hello.jpg" alt="Hello">
-                <h1>Welcome New User!</h1>
-                <h3>We hope you Enjoy Our Service</h3>
+                <button type="button">Login</button>
+                <div id="Text2">
+                    <h1><img src="./IMG/Hello.jpg" alt="Hello"></h1>
+                    <h1><span>Welcome New User!</span></h1>
+                    <h1>We hope you Enjoy Our Service</h1>
+                </div>
             </div>
             <div id="signup1">
-                <button type="button">Log in</button>
+                <button type="button">Signup</button>
             </div>
         </div>
     </div>
@@ -59,6 +71,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/cff80723f3.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
 

@@ -1,24 +1,24 @@
 
-let login1btn = document.querySelector("#login1 button");
+let login1btn = document.querySelector("#login2 button");
 let login = document.querySelector("#login");
-let signup1btn = document.querySelector("#signup1 button");
+let signup1btn = document.querySelector("#signup2 button");
 let signup = document.querySelector("#signup");
 
+// Login and Signup Event Listeners
 login1btn.addEventListener("click", function () {
-    gsap.to("#login", { opacity: 0 ,duration :0.8});
-    gsap.to("#signup", { opacity: 1 ,duration :0.8});
+    gsap.to("#login", { opacity: 0, duration: 0.8 });
+    gsap.to("#signup", { opacity: 1, duration: 0.8 });
     login.style.display = "none";
     signup.style.display = "flex";
 });
 
 signup1btn.addEventListener("click", function () {
-    gsap.to("#signup", { opacity: 0 ,duration :0.8});
-    gsap.to("#login", { opacity: 1 ,duration :0.8});
+    gsap.to("#signup", { opacity: 0, duration: 0.8 });
+    gsap.to("#login", { opacity: 1, duration: 0.8 });
     signup.style.display = "none";
     login.style.display = "flex";
 });
-
-
+// Captcha Code Generator
 let captcha;
 function generate() {
 
@@ -61,3 +61,65 @@ function printmsg() {
         generate();
     }
 }
+
+
+// Adding Animation To Text
+function textAnimation() {
+    gsap.from("#Text1 h1", {
+        y: 120,
+        stagger: 0.3,
+        duration: 0.5,
+        onload: {
+            trigger: "#login1",
+            start: "top 47%",
+            end: "top 37%",
+            scrub: 2
+        }
+    });
+    gsap.from("#Text2 h1", {
+        y: 120,
+        stagger: 0.3,
+        duration: 0.5,
+        onload: {
+            trigger: "#signup1",
+            start: "top 47%",
+            end: "top 37%",
+            scrub: 2
+        }
+    });
+}
+window.onload = function () {
+    textAnimation();
+}
+
+function textAnimation2() {
+    gsap.from("#Text1 h1", {
+        y: 120,
+        stagger: 0.3,
+        duration: 0.5,
+        onload: {
+            trigger: "#login1",
+            start: "top 47%",
+            end: "top 37%",
+            scrub: 2
+        }
+    });
+    gsap.from("#Text2 h1", {
+        y: 120,
+        stagger: 0.3,
+        duration: 0.5,
+        onload: {
+            trigger: "#signup1",
+            start: "top 47%",
+            end: "top 37%",
+            scrub: 2
+        }
+    });
+}
+
+login1btn.addEventListener("click", function () {
+    textAnimation2()
+})
+signup1btn.addEventListener("click", function () {
+    textAnimation()
+})
