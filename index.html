@@ -10,63 +10,78 @@
 </head>
 
 <body onload="generate()">
-    <div id="main">
-        <div id="login">
-            <div id="login1">
-                <button type="button">Login</button>
-                <div id="icons">
-                    <i class="fa-brands fa-instagram"><link rel="stylesheet" href="#"></i>
-                    <i class="fa-brands fa-google"><link rel="stylesheet" href="#"></i>
-                    <i class="fa-brands fa-linkedin"><link rel="stylesheet" href="#"></i>
-                    <i class="fa-brands fa-x-twitter"><link rel="stylesheet" href="#"></i>
-                </div>
-                <form action="#">
-                    <h4>E-mail</h4>
-                    <input type="text" id="Email" placeholder="  E-mail">
-                    <h4>Password</h4>
-                    <input type="Password" id="pass" placeholder="  Password">
-                    <!-- Captcha Code -->
-                    <h4>Enter Given Captcha</h4>
-                    <div id="captcha">
-                        <div id="user-input" class="inline">
-                            <input type="text" id="submit" placeholder="  Captcha code" />
-                        </div>
-                        <div class="inline" onclick="generate()">
-                            <i class="fas fa-sync" id="Reload"></i>
-                        </div>
-                        <div id="image" class="inline" selectable="False">
-                        </div>
+    <div id="Main">
+        <button type="button" id="Backbtn">
+            <i class="fa-solid fa-moon" id="Backbtn1"></i>
+            <i class="fa-solid fa-lightbulb" id="Backbtn2"></i>
+        </button>
+        <div id="main">
+            <div id="login">
+                <div id="login1">
+                    <button type="button">Login</button>
+                    <div id="icons" type=" button">
+                        <i class="fa-brands fa-instagram">
+                            <link rel="stylesheet" href="#">
+                        </i>
+                        <i class="fa-brands fa-google">
+                            <link rel="stylesheet" href="#">
+                        </i>
+                        <i class="fa-brands fa-linkedin">
+                            <link rel="stylesheet" href="#">
+                        </i>
+                        <i class="fa-brands fa-x-twitter">
+                            <link rel="stylesheet" href="#">
+                        </i>
                     </div>
-                    <h5>If not have an Account please click on Sign-up</h5>
-                    <input type="submit" id="btn" onclick="printmsg()" />
-                    <p id="key"></p>
-                </form>
-            </div>
-            <div id="login2">
-                <button type="button">Signup</button>
-                <div id="Text1">
-                    <h1><img src="./IMG/Hello.jpg" alt="Hello"></h1>
-                    <h1><span>Welcome Back Buddy!</span></h1>
-                    <h1>We hope You are Enjoying our Services</h1>
-                </div>
-            </div>
-        </div>
+                    <form action="#">
+                        <h4>E-mail</h4>
+                        <input type="text" id="Email" placeholder="  E-mail">
+                        <h4>Password</h4>
+                        <input type="Password" id="pass" placeholder="  Password">
+                        <!-- Captcha Code -->
+                        <h4>Enter Given Captcha</h4>
+                        <div id="captcha">
+                            <div id="user-input" class="inline">
+                                <input type="text" id="submit" placeholder="Captcha code" />
+                            </div>
+                            <div class="inline" onclick="generate()">
+                                <i class="fas fa-sync" id="Reload"></i>
+                            </div>
+                            <div id="image" class="inline" selectable="False">
+                            </div>
+                        </div>
+                        <div id="key"></div>
 
-        <div id="signup">
-            <div id="signup2">
-                <button type="button">Login</button>
-                <div id="Text2">
-                    <h1><img src="./IMG/Hello.jpg" alt="Hello"></h1>
-                    <h1><span>Welcome New User!</span></h1>
-                    <h1>We hope you Enjoy Our Service</h1>
+                        <h5>If not have an Account please click on Sign-up</h5>
+                        <input type="submit" id="btn" onclick="printmsg()" />
+                        <p id="key"></p>
+                    </form>
+                </div>
+                <div id="login2">
+                    <button type="button">Signup</button>
+                    <div id="Text1">
+                        <h1><img src="./IMG/Hello.jpg" alt="Hello"></h1>
+                        <h1><span>Welcome Back Buddy!</span></h1>
+                        <h1>We hope You are Enjoying our Services</h1>
+                    </div>
                 </div>
             </div>
-            <div id="signup1">
-                <button type="button">Signup</button>
+
+            <div id="signup">
+                <div id="signup2">
+                    <button type="button">Login</button>
+                    <div id="Text2">
+                        <h1><img src="./IMG/Hello.jpg" alt="Hello"></h1>
+                        <h1><span>Welcome New User!</span></h1>
+                        <h1>We hope you Enjoy Our Service</h1>
+                    </div>
+                </div>
+                <div id="signup1">
+                    <button type="button">Signup</button>
+                </div>
             </div>
         </div>
     </div>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
