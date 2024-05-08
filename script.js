@@ -62,6 +62,8 @@ function printmsg() {
 }
 
 // Adding Animation To Text
+textAnimation();
+
 function textAnimation() {
     gsap.from("#Text1 h1", {
         y: 120,
@@ -87,58 +89,29 @@ function textAnimation() {
     });
 }
 
-function textAnimation2() {
-    gsap.from("#Text1 h1", {
-        y: 120,
-        stagger: 0.3,
-        duration: 0.5,
-        onload: {
-            trigger: "#login1",
-            start: "top 47%",
-            end: "top 37%",
-            scrub: 2
-        }
-    });
-    gsap.from("#Text2 h1", {
-        y: 120,
-        stagger: 0.3,
-        duration: 0.5,
-        onload: {
-            trigger: "#signup1",
-            start: "top 47%",
-            end: "top 37%",
-            scrub: 2
-        }
-    });
-}
-
-window.onload = function () {
-    textAnimation();
-}
-
 login1btn.addEventListener("click", function () {
-    textAnimation2()
+    textAnimation()
 })
 
 signup1btn.addEventListener("click", function () {
     textAnimation()
 })
 
-// function textAnimation3() {
-//     gsap.from("#icons i", {
-//         x: 120,
-//         stagger: 0.2,
-//         duration: 0.3,
-//         opacity:0.5,
-//         onload: {
-//             trigger: "#login1",
-//             start: "top 47%",
-//             end: "top 37%",
-//             scrub: 2,
-//         }
-//     });
-// }
-// textAnimation3()
+function textAnimation3() {
+    gsap.from("#icons i", {
+        x: 120,
+        stagger: 0.2,
+        duration: 0.3,
+        opacity:0.5,
+        onload: {
+            trigger: "#login1",
+            start: "top 47%",
+            end: "top 37%",
+            scrub: 2,
+        }
+    });
+}
+textAnimation3()
 
 // Backgroung Color change
 function backGroundColorChange() {

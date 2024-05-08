@@ -104,6 +104,12 @@ body {
     margin-bottom: 0;
 }
 
+#icons button{
+    width: auto;
+    background-color: transparent;
+    border: none;
+}
+
 #icons i{
     width: 2vw;
     height: 2vw;
@@ -112,11 +118,11 @@ body {
     color: white;
 }
 
-#icons i:hover{
-    font-size: 2.5vw;
-    transition-delay: 2;
-    color: rgba(0, 0, 0, 0.61);
-}
+/* #icons i:hover{ */
+    /* font-size: 2.2vw; */
+    /* transition-delay: 2; */
+    /* color: rgba(0, 0, 0, 0.61); */
+/* } */
 
 #login1 form {
     margin-top: 0;
