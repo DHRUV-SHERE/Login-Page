@@ -20,10 +20,10 @@
                 <div id="login1">
                     <button type="button">Login</button>
                     <div id="icons">
-                        <button type="submit"><i class="fa-brands fa-instagram"></i></button>
-                        <button type="submit"><i class="fa-brands fa-google"></i></button>
-                        <button type="submit"><i class="fa-brands fa-linkedin"></i></button>
-                        <button type="submit"><i class="fa-brands fa-x-twitter"></i></button>
+                        <button type="btn"><i class="fa-brands fa-instagram"></i></button>
+                        <button type="btn"><i class="fa-brands fa-google"></i></button>
+                        <button type="btn"><i class="fa-brands fa-linkedin"></i></button>
+                        <button type="btn"><i class="fa-brands fa-x-twitter"></i></button>
                     </div>
                     <form action="#">
                         <h4>E-mail / ID</h4>
@@ -70,7 +70,34 @@
                 </div>
                 <div id="signup1">
                     <button type="button">Sign up</button>
-
+                    <div id="icons">
+                        <button type="button"><i class="fa-brands fa-instagram"></i></button>
+                        <button type="button"><i class="fa-brands fa-google"></i></button>
+                        <button type="button"><i class="fa-brands fa-linkedin"></i></button>
+                        <button type="button"><i class="fa-brands fa-x-twitter"></i></button>
+                    </div>
+                    <form action="#" class="sform">
+                        <div class="name">
+                            <div id="fname">
+                                <h4>First Name</h4>
+                                <input type="text" name="First Name" placeholder=" First Name">
+                            </div>
+                            <div id="lname">
+                                <h4>Last Name/Surname</h4>
+                                <input type="text" name="Surname" id="Lname" placeholder=" Surname">
+                            </div>
+                        </div>
+                        <h4>E-mail</h4>
+                        <input type="email" name="Email" id="mail" placeholder=" E-mail">
+                        <h4>Mobile No.</h4>
+                        <input type="number" name="Mobileno." id="Mobileno." placeholder=" Mobile No.">
+                        <h4>OTP</h4>
+                        <input type="number" name="OTP" id="OTP" placeholder=" OTP">
+                        <h4>Password</h4>
+                        <input type="password" name="" id="password" placeholder=" Password" >
+                        <span id="passwordError" class="error"></span>
+                        <button type="submit" class="btn" onclick="validatePassword()">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>

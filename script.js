@@ -7,6 +7,8 @@ let i = document.querySelector("#Backbtn i");
 let body = document.querySelector("body");
 let Backbtn1 = document.querySelector("#Backbtn1");
 let Backbtn2 = document.querySelector("#Backbtn2");
+let input = document.querySelector("input");
+let input1 = document.querySelector("#login1 input");
 
 // Login and Signup Event Listeners
 login1btn.addEventListener("click", function () {
@@ -24,7 +26,7 @@ signup1btn.addEventListener("click", function () {
 });
 
 // Captcha Code Generator
-window.onload = function() {
+window.onload = function () {
     generate(); // Generate captcha when the window finishes loading
 };
 
@@ -102,7 +104,7 @@ function textAnimation3() {
         x: 120,
         stagger: 0.2,
         duration: 0.3,
-        opacity:0.5,
+        opacity: 0.5,
         onload: {
             trigger: "#login1",
             start: "top 47%",
@@ -113,27 +115,43 @@ function textAnimation3() {
 }
 textAnimation3()
 
-// Backgroung Color change
-function backGroundColorChange() {
-    Backbtn.addEventListener("click", function() {
-        if (body.style.backgroundColor !== "rgba(55, 0, 255, 0.64)") {
+// Background Color Change
+function backGroundColorChange1() {
+    Backbtn.addEventListener("click", function () {
+        if (!body.style.backgroundImage.includes("./IMG/DarkBg.jpg")) {
             gsap.to(Backbtn1, { opacity: 0, duration: 0.8 });
             gsap.to(Backbtn2, { opacity: 1, duration: 0.8 });
-            body.style.backgroundColor = "rgba(55, 0, 255, 0.64)";
+            body.style.backgroundImage = "url(./IMG/DarkBg.jpg)";
             Backbtn2.style.color = "white";
             Backbtn1.style.display = "none";
             Backbtn2.style.display = "flex";
-        } 
+        }
         else {
             gsap.to(Backbtn1, { opacity: 1, duration: 0.8 });
             gsap.to(Backbtn2, { opacity: 0, duration: 0.8 });
-            body.style.backgroundColor = "white";
-            Backbtn1.style.color = "rgba(55, 0, 255, 0.64)";
+            body.style.backgroundImage = "url(./IMG/LiteBg.jpg)";
             Backbtn1.style.display = "flex";
+            Backbtn1.style.color = "rgba(55, 0, 255, 0.64)";
             Backbtn2.style.display = "none";
         }
     });
 }
-window.onload=function(){
-    backGroundColorChange();
+window.onload = function () {
+    backGroundColorChange1();
+}
+
+function validatePassword() {
+    var passwordInput = document.getElementsByClassName("password");
+    var password = passwordInput.value;
+    var passwordError = document.getElementById("passwordError");
+    var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+}{"':;?/>.<,])[0-9a-zA-Z!@#$%^&*()_+}{"':;?/>.<,]{8,}$/;
+
+    if (!passwordRegex.test(password)) {
+        passwordError.textContent = "Password must contain at least 8 characters including at least one uppercase letter, one lowercase letter, one number, and one special character";
+        passwordInput.focus();
+        return false;
+    } else {
+        passwordError.textContent = "";
+        return true;
+    }
 }
