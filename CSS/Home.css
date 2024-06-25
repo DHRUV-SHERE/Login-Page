@@ -1,0 +1,148 @@
+@font-face {
+    font-family: nb;
+    src: url(../FONT/NBInternationalProBoo.ttf);
+}
+@font-face {
+    font-family: rejoy;
+    src: url(../FONT/Rejouice-Headline.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
+    font-family: nb;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+.navbar{
+    height: auto;
+    width: 100vw;
+    background-color: black;
+}
+.navbar .active{
+    font-weight: 500;
+}
+.navbar .btn {
+    margin-left: 1vw;
+}
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 85vw;
+    margin: auto;
+    margin-top: 1vw;
+}
+.card{
+    margin-top: 2vw;
+}
+.card-body{
+    background-color:rgba(146, 44, 44, 0.466);
+    display: flex;
+}
+.card-body img{
+    border-radius: 13%;
+}
+.card-footer .btn{
+    background-color: black;
+    color: whitesmoke;
+    font-weight: 400;
+}
+.card-footer .btn:hover{
+    background: linear-gradient(0,white, white);
+    transition: 0.8s;
+    background-repeat: no-repeat;
+    background-size: 0;
+    background-position: bottom;
+    color: black;
+    font-weight: 400;
+}
+.footer{
+    font-weight: 100;
+    background-color: black;
+    color: whitesmoke;
+}
+.footer hr {
+    color: white;
+}
+.com-display{
+    font-family: rejoy;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.com-display h5{
+    font-size: 1.2rem;
+    margin-top: 1vw;
+}
+.m-footer{
+    margin: auto;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.m-footer .left{
+    width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+.left a{
+    text-decoration: none;
+    color: white;
+}
+.left a:hover{
+    color: #0D6EFD;
+    text-decoration: underline;
+}
+.left h5{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: rejoy;
+}
+.left h6{
+    font-size: 0.9rem;
+    font-family: rejoy;
+}
+#logos1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 0.5vw;
+}
+#logos1 a i{
+    font-size: 1.8rem;
+}
+#logos2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 0.5vw;
+}
+#logos2 a i{
+    font-size: 1.8rem;
+}
+.l-footer{
+    width: 95vw;
+    margin: auto;
+}
+.l-footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+.l-footer a:hover{
+    color: #0D6EFD;
+    text-decoration: underline;
+}

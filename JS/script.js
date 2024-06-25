@@ -118,21 +118,20 @@ textAnimation3()
 // Background Color Change
 function backGroundColorChange1() {
     Backbtn.addEventListener("click", function () {
-        if (!body.style.backgroundImage.includes("./IMG/DarkBg.jpg")) {
+        if (body.style.backgroundColor !== "rgba(146, 44, 44, 0.466)") {
             gsap.to(Backbtn1, { opacity: 0, duration: 0.8 });
             gsap.to(Backbtn2, { opacity: 1, duration: 0.8 });
-            body.style.backgroundImage = "url(./IMG/DarkBg.jpg)";
+            body.style.backgroundColor = "rgba(146, 44, 44, 0.466)";
             Backbtn2.style.color = "white";
             Backbtn1.style.display = "none";
             Backbtn2.style.display = "flex";
-        }
-        else {
+        } else {
             gsap.to(Backbtn1, { opacity: 1, duration: 0.8 });
             gsap.to(Backbtn2, { opacity: 0, duration: 0.8 });
-            body.style.backgroundImage = "url(./IMG/LiteBg.jpg)";
-            Backbtn1.style.display = "flex";
-            Backbtn1.style.color = "rgba(55, 0, 255, 0.64)";
+            body.style.backgroundColor = "white";
             Backbtn2.style.display = "none";
+            Backbtn1.style.display = "flex";
+            Backbtn1.style.color = "rgba(146, 44, 44, 0.466)";
         }
     });
 }

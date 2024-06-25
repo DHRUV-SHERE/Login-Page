@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RATE IT | ADMIN-PANEL</title>
+    <link rel="stylesheet" href="../CSS/Adminpanel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <!-- Button to toggle navigation -->
+            <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                Admin Menu
+            </button>
+            <!-- Navigation menu -->
+            <div class="collapse nav-horizontal" id="nav-menu">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i>
+                            Dashboard</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-city"></i> Companies</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-square-poll-vertical"></i> Polls</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#"><i class="fa-regular fa-file-lines"></i> Report</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-registered"></i> Registered Company</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-square-poll-horizontal"></i> Poll
+                            Requests</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-circle-plus"></i> Add Company</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-file-circle-plus"></i> Add Poll</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-circle-minus"></i> Remove Company</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-file-circle-minus"></i> Remove Poll</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-share-from-square"></i> Send Report</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <nav class="sidebar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../HTML/Adminpanel.html">
+                    <h4><img src="../IMG/favicon-32x32.png" alt="Rate It Logo"> RATE IT</h4>
+                </a>
+                <hr>
+                <ul class="navbar-nav mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i>
+                            Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-city"></i> Companies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-square-poll-vertical"></i> Polls</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-regular fa-file-lines"></i> Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-registered"></i> Registered Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-square-poll-horizontal"></i> Poll
+                            Requests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-circle-plus"></i> Add Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-file-circle-plus"></i> Add Poll</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-circle-minus"></i> Remove Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-file-circle-minus"></i> Remove Poll</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-share-from-square"></i> Send Report</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-success w-100" type="button">Log Out</button>
+            </div>
+        </nav>
+        <div class="main-content">
+
+            <div class="content-1">
+                <h3> ADMIN PANEL </h3>
+            </div>
+            <div class="content-2">
+                <div class="card text-bg-primary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Active Poll</div>
+                    <div class="card-body d-flex">
+                        <h5 class="card-title">Primary card title</h5>
+                        <h3><i class="fa-solid fa-ranking-star"></i></h3>
+                    </div>
+                </div>
+                <div class="card text-bg-primary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Active User</div>
+                    <div class="card-body d-flex">
+                        <h5 class="card-title">Active user: 846</h5>
+                        <h3><i class="fa-solid fa-users"></i></h3>
+                    </div>
+                </div>
+                <div class="card text-bg-primary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Active Companies</div>
+                    <div class="card-body d-flex">
+                        <h5 class="card-title">Primary card title</h5>
+                        <h3><i class="fa-solid fa-city"></i></h3>
+                    </div>
+                </div>
+                <div class="card text-bg-primary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Pending Requests</div>
+                    <div class="card-body d-flex">
+                        <h5 class="card-title">Primary card title</h5>
+                        <h3><i class="fa-solid fa-hourglass-half"></i></h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/cff80723f3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
